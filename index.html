@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ApparelZx - Premium Roblox Pets</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>ApparelZx</h1>
+        <p class="tag">Premium Roblox Pets</p>
+      </div>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <h2>Grow A Garden</h2>
+          <p class="lead">Hand-picked rare pets with guaranteed authenticity. Updated in real-time.</p>
+          <div class="cta">
+            <button id="scrollProducts">Shop Now</button>
+            <a class="wa" href="https://wa.me/628123456789" target="_blank" rel="noopener">Contact via WhatsApp</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <img src="assets/hero-pet.svg" alt="hero pet">
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="products-section">
+      <div class="container">
+        <h3>Featured Pets</h3>
+        <div id="product-list" class="products-grid">
+          <!-- products rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h3>Contact & Quick Links</h3>
+        <p>Instant delivery & trusted service.</p>
+        <div class="links">
+          <a href="#home">Home</a> | <a href="#products">Products</a> | <a href="#contact">Contact</a>
+        </div>
+        <p>WhatsApp: <a href="https://wa.me/628123456789" target="_blank" rel="noopener">+62 812-3456-789</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 ApparelZx. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Firebase (compat) - replace config below with your project's config -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+
+  <script>
+    // === REPLACE THIS CONFIG WITH YOUR FIREBASE PROJECT CONFIG ===
+    // You get this when you register a Web App in the Firebase console.
+    const firebaseConfig = {
+      apiKey: "REPLACE_API_KEY",
+      authDomain: "REPLACE_AUTH_DOMAIN",
+      projectId: "REPLACE_PROJECT_ID",
+      storageBucket: "REPLACE_STORAGE_BUCKET",
+      messagingSenderId: "REPLACE_SENDER_ID",
+      appId: "REPLACE_APP_ID"
+    };
+
+    // Initialize Firebase (compat)
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+  </script>
+
+  <script src="script-firebase.js"></script>
+</body>
+</html>
